@@ -1,0 +1,274 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nada {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.teaser video {
+    /* text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%; */
+
+    width: 140%; /* 设置宽度为120%，使其比容器宽 */
+    max-width: none; /* 确保宽度不会被限制 */
+    height: auto; /* 保持视频的纵横比 */
+    margin-left: -20%; /* 负的左外边距，使视频居中 */
+}
+
+.publication-title {
+}
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.section-title {
+    text-align: center;
+    /* padding-bottom: 1rem; */
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.publication-video-small {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 1rem;
+    padding-bottom: 75.00%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  /* margin: 5px;
+  overflow: hidden;
+  padding: 0px 30px 0px 30px;
+  font-size: 0; */
+  width: 100%; /* 或者你可以设置一个具体的像素值，例如 3000px */
+  max-width: 3000px; /* 设置最大宽度 */
+  margin: 0 auto; /* 使组件居中 */
+}
+
+.results-carousel .item .carousel-content {
+    /* padding: 0px 0 12px 0;
+    border-radius: 10px; */
+    width: 100%; /* 图片宽度适应父容器 */
+    height: auto; /* 保持图片比例 */
+}
+
+.unpad {
+    margin-bottom: -10%
+}
+
+.bullets {
+    bottom: 10px;
+}
+
+.side-by-side {
+    width: 50%;
+}
+
+.results-carousel img {
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 4096px;
+}
+
+.results-carousel video {
+  margin: 0;
+
+}
+
+.animals {
+    aspect-ratio: 512 / 364;
+}
+
+
+.interpolation-panel {
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.interpolation-panel .interpolation-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.interpolation-video-column {
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+#interpolation-image-wrapper {
+  width: 100%;
+}
+#interpolation-image-wrapper img {
+  border-radius: 5px;
+}
+
+#results-carousel-face {
+   width: 120%;
+   height: 120%;
+   margin: 0 0 0 -10%;
+}
+
+.wide-image {
+  width: 140%; /* 设置宽度为120%，使其比容器宽 */
+  max-width: none; /* 确保宽度不会被限制 */
+  height: auto; /* 保持图片的纵横比 */
+  margin-left: -20%; /* 负的左外边距，使图片居中 */
+}
+
+.custom-font {
+  font-family: 'Raleway', sans-serif;
+}
+
+#teaser {
+    /* text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%; */
+
+    width: 140%; /* 设置宽度为120%，使其比容器宽 */
+    max-width: none; /* 确保宽度不会被限制 */
+    height: auto; /* 保持视频的纵横比 */
+    margin-left: -20%; /* 负的左外边距，使视频居中 */
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.item {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-content img {
+  width: 100%;
+  display: block;
+}
+
+.x-gradient-font {
+  background: linear-gradient(107.54deg, #0078d4 .39%, #8661c5 51.23%, #ff9349 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

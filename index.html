@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content=" HumanAesExpert: Advancing a Multi-Modality Foundation Model for Human Image Aesthetic Assessment. ">
+  <meta name="keywords" content="customize characters wearing any combination of garments!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HumanAesExpert: Advancing a Multi-Modality Foundation Model for Human Image Aesthetic Assessment</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/dressing.svg ">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+
+
+  
+  <section class="hero">
+<!--     <section class="hero" style="
+        background-image: url('static/images/momohuhuhuluobo.jpg');
+        background-size: 45% auto;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-attachment: local;
+        min-height: 400px;
+        padding: 2rem 1.5rem;
+        position: relative;
+    "> -->
+<!--       <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6); 
+        z-index: 0;">
+    </div> -->
+      
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              🥕<span style="
+              font-weight: bold;
+              background: linear-gradient(107.54deg, #0078d4 .39%, #8661c5 51.23%, #ff9349 100%);
+              -webkit-background-clip: text;
+              color: transparent;
+            ">HumanAesExpert
+    </span>: Advancing a Multi-Modality Foundation Model for Human Image Aesthetic Assessment</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=4eRwbOEAAAAJ&hl=zh-CN&authuser=1">Zhichao Liao</a><sup>1 ♱</sup>,</span>
+              <span class="author-block">
+                <a href="">Xiaokun Liu</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="">Wenyu Qin</a><sup>2</sup>,</span>
+<!--               <span class="author-block">
+                <a href="">Dezhi Zheng</a><sup>3</sup>,</span> -->
+<!--               <span class="author-block">
+                <a href="">Peixin Xie</a><sup>4</sup>,</span> -->
+              <span class="author-block">
+                <a href="">Qingyu Li</a><sup>2</sup>,</span>
+              </span>
+              <span class="author-block">
+                <a href="">Qiulin Wang</a><sup>2</sup>,</span>
+              <br>
+              <span class="author-block">
+                <a href="">Pengfei Wan</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="">Di Zhang</a><sup>2</sup>,</span>              
+              <span class="author-block">
+                <a href="">Long Zeng</a><sup>1 ✉</sup>,</span>
+              <span class="author-block">
+                <a href="">Pingfa Feng</a><sup>1</sup>,</span>
+            </div>
+
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>1</sup>Tsinghua University,</span>&nbsp;
+              <span class="author-block"><sup>2</sup>Kuaishou Technology,</span>&nbsp
+              <br>
+<!--               <span class="author-block"><sup>3</sup>Shenzhen University,</span>&nbsp
+              <span class="author-block"><sup>4</sup>Hunan University of Technology</span>&nbsp -->
+            </div>
+
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>♱</sup>Internship at KwaiVGI, Kuaishou Technology </span>&nbsp
+              <span class="author-block"><sup>✉</sup>Corresponding author</span>&nbsp
+            </div>
+    
+
+            <!-- <div class="is-size-5 publication-authors">
+              <p style="color: green;">We'd like to thank Yongsheng Dong and Guoliang Xu, for the valuable help on data processing.</p>
+            </div> -->
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"> 
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/HumanAesExpert/HumanAesExpert" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!--   Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/teaser.png" alt="" class="wide-image"/>
+
+        <h2 class="content has-text-justified">
+          <p>
+            <b><i>todo: </i></b> todo. 
+          </p>
+          <p>
+            <b><i>todo: </i></b> todo.
+          </p>
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-2" style="font-family: Comic Sans MS"><div class="x-gradient-font">Abstract</div></h2>
+          <div class="content has-text-justified">
+            <p>
+              todo 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+
+
+  <!-- Paper poster -->
+  <section class="section hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-">
+            <h2 class="title is-2" style="font-family: Comic Sans MS"><div class="x-gradient-font">How does it work?</div></h2>
+            <div class="columns is-centered has-text-justified">
+              <td colspan="3">
+                <img src="static/images/overview.png" alt="" width="1600" />
+              </td>
+            </div>
+            <div class="content has-text-justified">
+              todo
+            </div>
+          </div>
+  </section>
+  <!--End paper poster -->
+
+
+  <!-- Video grid single ref -->
+  <section class="section hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column custom-width">
+            <h2 class="title is-2" style="font-family: Comic Sans MS"><div class="x-gradient-font">todo</div></h2>
+
+            <div class="content has-text-centered">
+              <td colspan="3">
+                <img src="static/images/compare_1.png" alt="" width="2160" />
+                <p>
+                  <b>todo</b> todo
+                </p>
+              </td>
+            </div>
+          </div>
+        </div>
+        <!-- <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Comparisons with IP-Adapter</h2>
+        <div id="results-carousel-ipadapter" class="carousel results-carousel">
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/compare_2.png"
+                      alt="Puppet."/>
+            </div>
+          </div>
+  
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/compare_3.png"
+                      alt="Puppet."/>
+            </div>
+          </div>
+        </div> -->
+        <!-- <p><br></p> -->
+      </div>
+    </div>
+  </section>
+  <!-- End video grid single ref -->
+
+
+  <!-- Video grid Extension -->
+  <section class="section hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-2 has-text-centered" style="font-family: Comic Sans MS"><div class="x-gradient-font">todo</div></h2>
+        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> todo</h2>
+        <div class="columns is-centered has-text-justified">
+          <td colspan="3">
+              <img src="static/images/hat1.png" alt="" style="width: 92%; margin-left: 3%;" />
+          </td>
+        </div>
+        <p style="margin-bottom: 5px;"><br></p>
+        
+        <div class="columns is-centered has-text-justified">
+          <td colspan="4">
+              <img src="static/images/ours1.gif" alt="" width="2160" />
+          </td>
+        </div>
+        <div class="columns is-centered has-text-justified">
+          <td colspan="3">
+              <img src="static/images/ours2.gif" alt="" width="2160" />
+          </td>
+        </div>
+        <!-- <p style="margin-bottom: 5px;"><br></p> -->
+
+        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> todo</h2>
+        <div class="columns is-centered has-text-justified">
+          <td colspan="3">
+              <img src="static/images/hat2.png" alt="" style="width: 92%;" />
+          </td>
+        </div>
+        <p style="margin-bottom: 5px;"><br></p>
+
+        <div class="columns is-centered has-text-justified">
+          <td colspan="3">
+              <img src="static/images/ours3.gif" alt="" width="2160" />
+          </td>
+        </div>
+        <p style="margin-bottom: 5px;"><br></p>
+
+        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> <b><i>todo</i></b> todo</h2>
+        <!-- <div id="results-carousel-more" class="carousel results-carousel"> -->
+        <div class="carousel results-carousel">
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/ip1.jpg"
+                      alt="Puppet." width="3000"/>
+            </div>
+          </div>
+
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/ip2.jpg"
+                      alt="Puppet." width="3000"/>
+            </div>
+          </div>
+
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/ip3.jpg"
+                      alt="Puppet." width="3000"/>
+            </div>
+          </div>
+
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/ip4.jpg"
+                      alt="Puppet." width="3000"/>
+            </div>
+          </div>
+
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/ip5.jpg"
+                      alt="Puppet." width="3000"/>
+            </div>
+          </div>
+
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/ip6.jpg"
+                      alt="Puppet." width="3000"/>
+            </div>
+          </div>
+
+        </div>
+        <p style="margin-bottom: 20px;"><br></p>
+
+        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> <b><i>todo</i></b> + todo</h2>
+        <!-- <div id="results-carousel-more" class="carousel results-carousel"> -->
+        <div class="carousel results-carousel">
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/lora_1.jpg"
+                      alt="Puppet."/>
+            </div>
+          </div>
+
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/lora_2.jpg"
+                      alt="Puppet."/>
+            </div>
+          </div>
+
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/lora_4.jpg"
+                      alt="Puppet."/>
+            </div>
+          </div>
+        </div>
+
+        <div id="results-carousel-more" class="carousel results-carousel">
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/lora_3.jpg"
+                      alt="Puppet."/>
+            </div>
+          </div>
+
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/lora_5.jpg"
+                      alt="Puppet."/>
+            </div>
+          </div>
+        </div>
+        <p style="margin-bottom: 10px;"><br></p>
+        <!-- <div class="columns is-centered has-text-justified">
+          <td colspan="3">
+            <img src="static/images/style_transfer.png" alt="" width="700" />
+          </td>
+        </div> -->
+
+        <!-- <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Style Mixing</h2>
+        <div class="columns is-centered has-text-justified">
+          <td colspan="3">
+            <img src="static/images/style_mixing.png" alt="" width="1080" />
+          </td>
+        </div>
+        <p style="margin-bottom: 20px;"><br></p>
+
+        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> DreamBooth/LoRA + <b><i>DEADiff</i></b></h2>
+        <div class="columns is-centered has-text-justified">
+          <td colspan="3">
+            <img src="static/images/dreambooth_lora.png" alt="" width="1080" />
+          </td>
+        </div>
+        <p style="margin-bottom: 20px;"><br></p>
+
+        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Stylized Reference Object Generation</h2>
+        <div class="columns is-centered has-text-justified">
+          <td colspan="3">
+            <img src="static/images/semantic_stylization.png" alt="" width="1080" />
+          </td>
+        </div>
+        <div class="content has-text-justified">
+          <td colspan="3">
+            <p>
+              This is a novel application of <b><i>DEADiff</i></b>. Instructed by the "content" condition,  <b><i>DEADiff</i></b> can extract the semantics of a reference image and achieve its stylization under the guidance of an extra text prompt.
+            </p>
+          </td>
+        </div>
+        <p style="margin-bottom: 20px;"><br></p> -->
+
+        <!-- <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> ControlNet + <b><i>DEADiff</i></b></h2>
+        <div id="results-carousel-more" class="carousel results-carousel">
+  
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/controlnet1.png"
+                     alt="Puppet."/>
+            </div>
+          </div>
+  
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/controlnet2.png"
+                     alt="Puppet."/>
+            </div>
+          </div>
+  
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/controlnet3.png"
+                     alt="Puppet."/>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <section class="section hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-2 has-text-centered" style="font-family: Comic Sans MS"><div class="x-gradient-font">Customized Characters</div></h2>
+        <video id="teaser" controls autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/teaser.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+
+  <!-- Video grid Extension -->
+  <!-- <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="section-title">
+          <h2 class="title is-2 is-centered">More Examples</h2>
+        </div>
+  
+        <div id="results-carousel-more" class="carousel results-carousel">
+  
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/more_1.png"
+                     alt="Puppet."/>
+            </div>
+          </div>
+  
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/more_2.png"
+                     alt="Puppet."/>
+            </div>
+          </div>
+  
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/more_3.png"
+                     alt="Puppet."/>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End video grid multi ref -->
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <!-- <h2 class="title">BibTeX</h2> -->
+      <h2 class="title is-2" style="font-family: Comic Sans MS"><div class="x-gradient-font">BibTeX</div></h2>
+      <p>
+        If you find this project useful in your research, please consider cite:
+      </p>
+      <pre><code>@article{todo,
+        title={todo},
+        author={todo},
+        journal={todo},
+        year={2025}
+  }</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+  <footer class="footer">
+    <div class="container">
+      <!-- <div class="content has-text-centered">
+        <a class="icon-link"
+           href="./static/videos/nerfies_paper.pdf">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div> -->
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              todo 
+<!--               This project is intended solely for academic research and effect demonstration. No commercial benefits are derived from it. Most models and clothing images used are from internet and public dataset (VITON-HD). 
+              All images and brands are the property of their respective owners. -->
+            </p>
+            <!-- <p>
+              This website is licensed under a <a rel="license"
+                                                  href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p> -->
+            <p>
+              Website source code based on the <a
+                href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
