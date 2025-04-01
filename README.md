@@ -2,7 +2,7 @@
 
   <h1 align="center">HumanAesExpert: Advancing a Multi-Modality Foundation Model for Human Image Aesthetic Assessment</h1>
 <!--   <h2 align="center">ICML 2024</h2> -->
-  <div align="center">  <img src='static/images/momohuhuhuluobo.jpg' style="height:200px"></img>  </div>
+  <div align="center">  <img src='static/images/teaser.png' style="height:200px"></img>  </div>
 
   
   <div align="center">
@@ -20,12 +20,12 @@
 
 <!--  ### [[`Project Page`](https://humanaesexpert.github.io/HumanAesExpert/)][[`arxiv`](https://arxiv.org/)][[`Paper`](https://arxiv.org/)][[`HumanAesExpert-1B`](https://huggingface.co/HumanBeauty/HumanAesExpert-1B)][[`HumanAesExpert-8B`](https://huggingface.co/HumanBeauty/HumanAesExpert-8B)][[`HumanBeauty`](https://huggingface.co/datasets/HumanBeauty/HumanBeauty-58K)] -->
 
-[Zhichao Liao](https://scholar.google.com/citations?user=4eRwbOEAAAAJ&hl=zh-CN&authuser=1)🦋 🐟, [Xiaokun Liu]()🥕, [Wenyu Qin]()🥕, [Qingyu Li]()🥕, 
-[Qiulin Wang]()🥕, [Pengfei Wan](https://scholar.google.com/citations?user=P6MraaYAAAAJ&hl=en)🥕, [Di Zhang]()🥕, [Long Zeng](https://scholar.google.com/citations?user=72QbaQwAAAAJ&hl=en)🦋 ✉, [Pingfa Feng]()🦋 </br>
+[Zhichao Liao](https://scholar.google.com/citations?user=4eRwbOEAAAAJ&hl=zh-CN&authuser=1)1 ♰, [Xiaokun Liu]()2, [Wenyu Qin]()2, [Qingyu Li]()2, 
+[Qiulin Wang]()2, [Pengfei Wan](https://scholar.google.com/citations?user=P6MraaYAAAAJ&hl=en)2, [Di Zhang]()2, [Long Zeng](https://scholar.google.com/citations?user=72QbaQwAAAAJ&hl=en)1 ✉, [Pingfa Feng]()1 </br>
   
-🦋 Tsinghua University  🥕 Kuaishou Technology
+1 Tsinghua University  2 Kuaishou Technology
 
-🐟 Internship at KwaiVGI, Kuaishou Technology  ✉ Corresponding Author
+♰ Internship at KwaiVGI, Kuaishou Technology  ✉ Corresponding Author
   </div>
 
 
