@@ -27,3 +27,33 @@
 
 🐟 Internship at KwaiVGI, Kuaishou Technology  ✉ Corresponding Author
   </div>
+
+
+
+## 📃 Abstract
+Image Aesthetic Assessment (IAA) is a long-standing and challenging research task. However, its subset, Human Image Aesthetic Assessment (HIAA), has been scarcely explored, even though HIAA is widely used in social media, AI workflows, and related domains. To bridge this research gap, our work pioneers a holistic implementation framework tailored for HIAA. Specifically, we introduce HumanBeauty, the first dataset purpose-built for HIAA, which comprises 108k high-quality human images with manual annotations. To achieve comprehensive and fine-grained HIAA, 50K human images are manually collected through a rigorous curation process and annotated leveraging our trailblazing 12-dimensional aesthetic standard, while the remaining 58K with overall aesthetic labels are systematically filtered from public datasets. Based on the HumanBeauty database, we propose HumanAesExpert, a powerful Vision Language Model for aesthetic evaluation of human images. We innovatively design an Expert head to incorporate human knowledge of aesthetic sub-dimensions while jointly utilizing the Language Modeling (LM) and Regression head. This approach empowers our model to achieve superior proficiency in both overall and fine-grained HIAA. Furthermore, we introduce a MetaVoter, which aggregates scores from all three heads, to effectively balance the capabilities of each head, thereby realizing improved assessment precision. Extensive experiments demonstrate that our HumanAesExpert models deliver significantly better performance in HIAA than other state-of-the-art models. Our datasets, models, and codes are publicly released to advance the HIAA community. 
+
+
+
+## 🎨 Updates
+  - **`2025/04/01`**: Our [**HumanAesExpert paper**](https://arxiv.org/abs/2503.23907) is available.
+
+## 🌏 Open Source
+Thank you all for your attention! We are actively cleaning our datasets, models, and codes, and we will open source them soon.
+
+
+    
+## 🖊 Citation
+If you find HumanAesExpert useful for your research, welcome to 🌟 this repo and cite our work using the following BibTeX:
+
+```
+@misc{liao2025humanaesexpertadvancingmultimodalityfoundation,
+      title={HumanAesExpert: Advancing a Multi-Modality Foundation Model for Human Image Aesthetic Assessment}, 
+      author={Zhichao Liao and Xiaokun Liu and Wenyu Qin and Qingyu Li and Qiulin Wang and Pengfei Wan and Di Zhang and Long Zeng and Pingfa Feng},
+      year={2025},
+      eprint={2503.23907},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2503.23907}, 
+}
+```
