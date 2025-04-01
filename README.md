@@ -21,7 +21,7 @@
 <!--  ### [[`Project Page`](https://humanaesexpert.github.io/HumanAesExpert/)][[`arxiv`](https://arxiv.org/)][[`Paper`](https://arxiv.org/)][[`HumanAesExpert-1B`](https://huggingface.co/HumanBeauty/HumanAesExpert-1B)][[`HumanAesExpert-8B`](https://huggingface.co/HumanBeauty/HumanAesExpert-8B)][[`HumanBeauty`](https://huggingface.co/datasets/HumanBeauty/HumanBeauty-58K)] -->
 
 [Zhichao Liao](https://scholar.google.com/citations?user=4eRwbOEAAAAJ&hl=zh-CN&authuser=1)🦋 🐟, [Xiaokun Liu]()🥕, [Wenyu Qin]()🥕, [Qingyu Li]()🥕, 
-[Qiulin Wang]()🥕, [Pengfei Wan]()🥕, [Di Zhang]()🥕, [Long Zeng]()🦋 ✉, [Pingfa Feng]()🦋 </br>
+[Qiulin Wang]()🥕, [Pengfei Wan](https://scholar.google.com/citations?user=P6MraaYAAAAJ&hl=en)🥕, [Di Zhang]()🥕, [Long Zeng](https://scholar.google.com/citations?user=72QbaQwAAAAJ&hl=en)🦋 ✉, [Pingfa Feng]()🦋 </br>
   
 🦋 Tsinghua University  🥕 Kuaishou Technology
 
@@ -32,6 +32,8 @@
 
 ## 📃 Abstract
 Image Aesthetic Assessment (IAA) is a long-standing and challenging research task. However, its subset, Human Image Aesthetic Assessment (HIAA), has been scarcely explored, even though HIAA is widely used in social media, AI workflows, and related domains. To bridge this research gap, our work pioneers a holistic implementation framework tailored for HIAA. Specifically, we introduce HumanBeauty, the first dataset purpose-built for HIAA, which comprises 108k high-quality human images with manual annotations. To achieve comprehensive and fine-grained HIAA, 50K human images are manually collected through a rigorous curation process and annotated leveraging our trailblazing 12-dimensional aesthetic standard, while the remaining 58K with overall aesthetic labels are systematically filtered from public datasets. Based on the HumanBeauty database, we propose HumanAesExpert, a powerful Vision Language Model for aesthetic evaluation of human images. We innovatively design an Expert head to incorporate human knowledge of aesthetic sub-dimensions while jointly utilizing the Language Modeling (LM) and Regression head. This approach empowers our model to achieve superior proficiency in both overall and fine-grained HIAA. Furthermore, we introduce a MetaVoter, which aggregates scores from all three heads, to effectively balance the capabilities of each head, thereby realizing improved assessment precision. Extensive experiments demonstrate that our HumanAesExpert models deliver significantly better performance in HIAA than other state-of-the-art models. Our datasets, models, and codes are publicly released to advance the HIAA community. 
+
+
 
 
 
