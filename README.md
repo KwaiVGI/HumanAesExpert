@@ -57,7 +57,7 @@ Our approach uses both LM and Regression heads, along with an Expert head and Me
 class="center">
 </p>
 
-The Visualization Results of Our Model, where ``( )'' indicate the Ground Truth scores. From A to L, they respectively represent facial brightness, facial feature clarity, facial skin tone, facial structure, facial contour clarity, facial aesthetic, outfit, body shape, looks, general appearance aesthetic, environment and overall aesthetic scores.
+The Visualization Results of Our Model, where ‘’( )'' indicate the Ground Truth scores. From A to L, they respectively represent facial brightness, facial feature clarity, facial skin tone, facial structure, facial contour clarity, facial aesthetic, outfit, body shape, looks, general appearance aesthetic, environment and overall aesthetic scores.
 
 
 ## 🎨 Updates
