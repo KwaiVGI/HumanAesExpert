@@ -21,9 +21,9 @@
 <!--  ### [[`Project Page`](https://humanaesexpert.github.io/HumanAesExpert/)][[`arxiv`](https://arxiv.org/)][[`Paper`](https://arxiv.org/)][[`HumanAesExpert-1B`](https://huggingface.co/HumanBeauty/HumanAesExpert-1B)][[`HumanAesExpert-8B`](https://huggingface.co/HumanBeauty/HumanAesExpert-8B)][[`HumanBeauty`](https://huggingface.co/datasets/HumanBeauty/HumanBeauty-58K)] -->
 
 [Zhichao Liao](https://scholar.google.com/citations?user=4eRwbOEAAAAJ&hl=zh-CN&authuser=1)<sup>1</sup> <sup>♰</sup>, [Xiaokun Liu]()<sup>2</sup>, [Wenyu Qin]()<sup>2</sup>, [Qingyu Li]()<sup>2</sup>, 
-[Qiulin Wang]()<sup>2</sup>, [Pengfei Wan](https://scholar.google.com/citations?user=P6MraaYAAAAJ&hl=en)<sup>2</sup>,  
-[Di Zhang]()<sup>2</sup>, [Long Zeng](https://scholar.google.com/citations?user=72QbaQwAAAAJ&hl=en)<sup>1</sup> <sup>✉</sup>, [Pingfa Feng]()<sup>1</sup>
-  
+[Qiulin Wang]()<sup>2</sup>,  
+[Pengfei Wan](https://scholar.google.com/citations?user=P6MraaYAAAAJ&hl=en)<sup>2</sup>, [Di Zhang]()<sup>2</sup>, [Long Zeng](https://scholar.google.com/citations?user=72QbaQwAAAAJ&hl=en)<sup>1</sup> <sup>✉</sup>, [Pingfa Feng]()<sup>1</sup>
+
 1 Tsinghua University    2 Kuaishou Technology
 
 ♰ Internship at KwaiVGI, Kuaishou Technology  ✉ Corresponding Author
