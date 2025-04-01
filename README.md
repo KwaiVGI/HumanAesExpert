@@ -17,9 +17,7 @@
 <!--   <a href='https://huggingface.co/spaces/KwaiVGI/VideoGen-RewardBench'><img src='https://img.shields.io/badge/Space-VideoGen--RewardBench-orange.svg?logo=data:image/svg+xml;charset=utf-8;base64,PHN2ZyB0PSIxNzM5MjA0MzY2MDEwIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjQzNDYiIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cGF0aCBkPSJNNjgyLjY2NjY2NyA0NjkuMzMzMzMzVjEyOEgzNDEuMzMzMzMzdjI1Nkg4NS4zMzMzMzN2NTEyaDg1My4zMzMzMzRWNDY5LjMzMzMzM2gtMjU2eiBtLTI1Ni0yNTZoMTcwLjY2NjY2NnY1OTcuMzMzMzM0aC0xNzAuNjY2NjY2VjIxMy4zMzMzMzN6IG0tMjU2IDI1NmgxNzAuNjY2NjY2djM0MS4zMzMzMzRIMTcwLjY2NjY2N3YtMzQxLjMzMzMzNHogbTY4Mi42NjY2NjYgMzQxLjMzMzMzNGgtMTcwLjY2NjY2NnYtMjU2aDE3MC42NjY2NjZ2MjU2eiIgcC1pZD0iNDM0NyIgZmlsbD0iIzhhOGE4YSI+PC9wYXRoPjwvc3ZnPg=='></a> &nbsp; -->
   </div>
   <br>
-
 <!--  ### [[`Project Page`](https://humanaesexpert.github.io/HumanAesExpert/)][[`arxiv`](https://arxiv.org/)][[`Paper`](https://arxiv.org/)][[`HumanAesExpert-1B`](https://huggingface.co/HumanBeauty/HumanAesExpert-1B)][[`HumanAesExpert-8B`](https://huggingface.co/HumanBeauty/HumanAesExpert-8B)][[`HumanBeauty`](https://huggingface.co/datasets/HumanBeauty/HumanBeauty-58K)] -->
-
 [Zhichao Liao](https://scholar.google.com/citations?user=4eRwbOEAAAAJ&hl=zh-CN&authuser=1)<sup>1</sup> <sup>♰</sup>, [Xiaokun Liu]()<sup>2</sup>, [Wenyu Qin]()<sup>2</sup>, [Qingyu Li]()<sup>2</sup>, 
 [Qiulin Wang]()<sup>2</sup>,  
 [Pengfei Wan](https://scholar.google.com/citations?user=P6MraaYAAAAJ&hl=en)<sup>2</sup>, [Di Zhang]()<sup>2</sup>, [Long Zeng](https://scholar.google.com/citations?user=72QbaQwAAAAJ&hl=en)<sup>1</sup> <sup>✉</sup>, [Pingfa Feng]()<sup>1</sup>
