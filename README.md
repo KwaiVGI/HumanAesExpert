@@ -7,7 +7,7 @@
   
   <div align="center">
   <!-- <a href='LICENSE'><img src='https://img.shields.io/badge/license-MIT-yellow'></a> -->
-  <a href='https://arxiv.org/'><img src='https://img.shields.io/badge/arXiv-HumanAesExpert-red'></a>  &nbsp;
+  <a href='https://arxiv.org/abs/2503.23907'><img src='https://img.shields.io/badge/arXiv-HumanAesExpert-red'></a>  &nbsp;
   <a href='https://humanaesexpert.github.io/HumanAesExpert/'><img src='https://img.shields.io/badge/Project-HumanAesExpert-green'></a> &nbsp;
   <a href="https://github.com/HumanAesExpert/HumanAesExpert"><img src="https://img.shields.io/badge/GitHub-HumanAesExpert-9E95B7?logo=github"></a> &nbsp; 
   <br>
