@@ -222,14 +222,16 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column is-">
-            <h2 class="title is-2" style="font-family: Comic Sans MS"><div class="x-gradient-font">How does it work?</div></h2>
+            <h2 class="title is-2" style="font-family: Comic Sans MS"><div class="x-gradient-font">HumanBeauty Dataset Construction Pipeline</div></h2>
             <div class="columns is-centered has-text-justified">
               <td colspan="3">
-                <img src="static/images/overview.png" alt="" width="1600" />
+                <img src="static/images/data-pipeline.png" alt="" width="1600" />
               </td>
             </div>
             <div class="content has-text-justified">
-              todo
+            First, we select six diverse open-source datasets as data sources and perform data filtering to build our HumanBeauty-58k. 
+            Additionally, we manually collect and annotate 50k human images across multiple dimensions to create our HumanBeauty-50k. 
+            Finally, we map all the scores into text of rating level to form QA pairs for training.
             </div>
           </div>
   </section>
@@ -242,13 +244,13 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column custom-width">
-            <h2 class="title is-2" style="font-family: Comic Sans MS"><div class="x-gradient-font">todo</div></h2>
+            <h2 class="title is-2" style="font-family: Comic Sans MS"><div class="x-gradient-font">static/images/model-overview.png</div></h2>
 
             <div class="content has-text-centered">
               <td colspan="3">
                 <img src="static/images/compare_1.png" alt="" width="2160" />
                 <p>
-                  <b>todo</b> todo
+                Our approach uses both LM and Regression heads, along with an Expert head and MetaVoter.
                 </p>
               </td>
             </div>
@@ -277,203 +279,27 @@
   <!-- End video grid single ref -->
 
 
-  <!-- Video grid Extension -->
   <section class="section hero is-small">
     <div class="hero-body">
       <div class="container is-max-desktop">
-        <h2 class="title is-2 has-text-centered" style="font-family: Comic Sans MS"><div class="x-gradient-font">todo</div></h2>
-        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> todo</h2>
-        <div class="columns is-centered has-text-justified">
-          <td colspan="3">
-              <img src="static/images/hat1.png" alt="" style="width: 92%; margin-left: 3%;" />
-          </td>
-        </div>
-        <p style="margin-bottom: 5px;"><br></p>
-        
-        <div class="columns is-centered has-text-justified">
-          <td colspan="4">
-              <img src="static/images/ours1.gif" alt="" width="2160" />
-          </td>
-        </div>
-        <div class="columns is-centered has-text-justified">
-          <td colspan="3">
-              <img src="static/images/ours2.gif" alt="" width="2160" />
-          </td>
-        </div>
-        <!-- <p style="margin-bottom: 5px;"><br></p> -->
-
-        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> todo</h2>
-        <div class="columns is-centered has-text-justified">
-          <td colspan="3">
-              <img src="static/images/hat2.png" alt="" style="width: 92%;" />
-          </td>
-        </div>
-        <p style="margin-bottom: 5px;"><br></p>
-
-        <div class="columns is-centered has-text-justified">
-          <td colspan="3">
-              <img src="static/images/ours3.gif" alt="" width="2160" />
-          </td>
-        </div>
-        <p style="margin-bottom: 5px;"><br></p>
-
-        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> <b><i>todo</i></b> todo</h2>
-        <!-- <div id="results-carousel-more" class="carousel results-carousel"> -->
-        <div class="carousel results-carousel">
-          <div class="item item-puppet">
-            <div class="carousel-content">
-              <img src="static/images/ip1.jpg"
-                      alt="Puppet." width="3000"/>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-">
+            <h2 class="title is-2" style="font-family: Comic Sans MS"><div class="x-gradient-font">Visualization Results</div></h2>
+            <div class="columns is-centered has-text-justified">
+              <td colspan="3">
+                <img src="static/images/cases.png" alt="" width="1600" />
+              </td>
+            </div>
+            <div class="content has-text-justified">
+            The Visualization Results of Our Model, where ‘’( )'' indicate the Ground Truth scores. From A to L, they respectively represent facial brightness, facial feature clarity, facial skin tone, facial structure, facial contour clarity, facial aesthetic, outfit, body shape, looks, general appearance aesthetic, environment and overall aesthetic scores.
             </div>
           </div>
-
-          <div class="item item-puppet">
-            <div class="carousel-content">
-              <img src="static/images/ip2.jpg"
-                      alt="Puppet." width="3000"/>
-            </div>
-          </div>
-
-          <div class="item item-puppet">
-            <div class="carousel-content">
-              <img src="static/images/ip3.jpg"
-                      alt="Puppet." width="3000"/>
-            </div>
-          </div>
-
-          <div class="item item-puppet">
-            <div class="carousel-content">
-              <img src="static/images/ip4.jpg"
-                      alt="Puppet." width="3000"/>
-            </div>
-          </div>
-
-          <div class="item item-puppet">
-            <div class="carousel-content">
-              <img src="static/images/ip5.jpg"
-                      alt="Puppet." width="3000"/>
-            </div>
-          </div>
-
-          <div class="item item-puppet">
-            <div class="carousel-content">
-              <img src="static/images/ip6.jpg"
-                      alt="Puppet." width="3000"/>
-            </div>
-          </div>
-
-        </div>
-        <p style="margin-bottom: 20px;"><br></p>
-
-        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> <b><i>todo</i></b> + todo</h2>
-        <!-- <div id="results-carousel-more" class="carousel results-carousel"> -->
-        <div class="carousel results-carousel">
-          <div class="item item-puppet">
-            <div class="carousel-content">
-              <img src="static/images/lora_1.jpg"
-                      alt="Puppet."/>
-            </div>
-          </div>
-
-          <div class="item item-puppet">
-            <div class="carousel-content">
-              <img src="static/images/lora_2.jpg"
-                      alt="Puppet."/>
-            </div>
-          </div>
-
-          <div class="item item-puppet">
-            <div class="carousel-content">
-              <img src="static/images/lora_4.jpg"
-                      alt="Puppet."/>
-            </div>
-          </div>
-        </div>
-
-        <div id="results-carousel-more" class="carousel results-carousel">
-          <div class="item item-puppet">
-            <div class="carousel-content">
-              <img src="static/images/lora_3.jpg"
-                      alt="Puppet."/>
-            </div>
-          </div>
-
-          <div class="item item-puppet">
-            <div class="carousel-content">
-              <img src="static/images/lora_5.jpg"
-                      alt="Puppet."/>
-            </div>
-          </div>
-        </div>
-        <p style="margin-bottom: 10px;"><br></p>
-        <!-- <div class="columns is-centered has-text-justified">
-          <td colspan="3">
-            <img src="static/images/style_transfer.png" alt="" width="700" />
-          </td>
-        </div> -->
-
-        <!-- <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Style Mixing</h2>
-        <div class="columns is-centered has-text-justified">
-          <td colspan="3">
-            <img src="static/images/style_mixing.png" alt="" width="1080" />
-          </td>
-        </div>
-        <p style="margin-bottom: 20px;"><br></p>
-
-        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> DreamBooth/LoRA + <b><i>DEADiff</i></b></h2>
-        <div class="columns is-centered has-text-justified">
-          <td colspan="3">
-            <img src="static/images/dreambooth_lora.png" alt="" width="1080" />
-          </td>
-        </div>
-        <p style="margin-bottom: 20px;"><br></p>
-
-        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Stylized Reference Object Generation</h2>
-        <div class="columns is-centered has-text-justified">
-          <td colspan="3">
-            <img src="static/images/semantic_stylization.png" alt="" width="1080" />
-          </td>
-        </div>
-        <div class="content has-text-justified">
-          <td colspan="3">
-            <p>
-              This is a novel application of <b><i>DEADiff</i></b>. Instructed by the "content" condition,  <b><i>DEADiff</i></b> can extract the semantics of a reference image and achieve its stylization under the guidance of an extra text prompt.
-            </p>
-          </td>
-        </div>
-        <p style="margin-bottom: 20px;"><br></p> -->
-
-        <!-- <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> ControlNet + <b><i>DEADiff</i></b></h2>
-        <div id="results-carousel-more" class="carousel results-carousel">
-  
-          <div class="item item-puppet">
-            <div class="carousel-content">
-              <img src="static/images/controlnet1.png"
-                     alt="Puppet."/>
-            </div>
-          </div>
-  
-          <div class="item item-puppet">
-            <div class="carousel-content">
-              <img src="static/images/controlnet2.png"
-                     alt="Puppet."/>
-            </div>
-          </div>
-  
-          <div class="item item-puppet">
-            <div class="carousel-content">
-              <img src="static/images/controlnet3.png"
-                     alt="Puppet."/>
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </div>
   </section>
 
 
+
   <!-- Teaser video-->
-  <section class="section hero is-small">
+<!--   <section class="section hero is-small">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <h2 class="title is-2 has-text-centered" style="font-family: Comic Sans MS"><div class="x-gradient-font">Customized Characters</div></h2>
@@ -483,7 +309,7 @@
         </video>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- End teaser video -->
 
 
@@ -532,12 +358,15 @@
       <p>
         If you find this project useful in your research, please consider cite:
       </p>
-      <pre><code>@article{todo,
-        title={todo},
-        author={todo},
-        journal={todo},
-        year={2025}
-  }</code></pre>
+      <pre><code>@misc{liao2025humanaesexpertadvancingmultimodalityfoundation,
+      title={HumanAesExpert: Advancing a Multi-Modality Foundation Model for Human Image Aesthetic Assessment}, 
+      author={Zhichao Liao and Xiaokun Liu and Wenyu Qin and Qingyu Li and Qiulin Wang and Pengfei Wan and Di Zhang and Long Zeng and Pingfa Feng},
+      year={2025},
+      eprint={2503.23907},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2503.23907}, 
+}</code></pre>
     </div>
   </section>
   <!--End BibTex citation -->
@@ -557,7 +386,6 @@
         <div class="column is-8">
           <div class="content">
             <p>
-              todo 
 <!--               This project is intended solely for academic research and effect demonstration. No commercial benefits are derived from it. Most models and clothing images used are from internet and public dataset (VITON-HD). 
               All images and brands are the property of their respective owners. -->
             </p>
