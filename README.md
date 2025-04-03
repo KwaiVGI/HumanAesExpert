@@ -23,7 +23,7 @@
 [Qiulin Wang]()<sup>2</sup>,  
 [Pengfei Wan](https://scholar.google.com/citations?user=P6MraaYAAAAJ&hl=en)<sup>2</sup>, [Di Zhang]()<sup>2</sup>, [Long Zeng](https://scholar.google.com/citations?user=72QbaQwAAAAJ&hl=en)<sup>1</sup> <sup>✉</sup>, [Pingfa Feng]()<sup>1</sup>
 
-1 Tsinghua University,    2 Kuaishou Technology
+<sup>1</sup> Tsinghua University,    <sup>2</sup> Kuaishou Technology
 
 ♰ Internship at KwaiVGI, Kuaishou Technology  ✉ Corresponding Author
   </div>
