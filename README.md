@@ -76,13 +76,10 @@ The Visualization Results of Our Model, where ‘’( )'' indicate the Ground Tr
 If you find HumanAesExpert useful for your research, welcome to 🌟 this repo and cite our work using the following BibTeX:
 
 ```
-@misc{liao2025humanaesexpertadvancingmultimodalityfoundation,
-      title={HumanAesExpert: Advancing a Multi-Modality Foundation Model for Human Image Aesthetic Assessment}, 
-      author={Zhichao Liao and Xiaokun Liu and Wenyu Qin and Qingyu Li and Qiulin Wang and Pengfei Wan and Di Zhang and Long Zeng and Pingfa Feng},
-      year={2025},
-      eprint={2503.23907},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2503.23907}, 
+@article{liao2025humanaesexpert,
+  title={HumanAesExpert: Advancing a Multi-Modality Foundation Model for Human Image Aesthetic Assessment},
+  author={Liao, Zhichao and Liu, Xiaokun and Qin, Wenyu and Li, Qingyu and Wang, Qiulin and Wan, Pengfei and Zhang, Di and Zeng, Long and Feng, Pingfa},
+  journal={arXiv preprint arXiv:2503.23907},
+  year={2025}
 }
 ```
