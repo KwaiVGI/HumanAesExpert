@@ -75,7 +75,7 @@ The Visualization Results of Our Model, where ‘’( )'' indicate the Ground Tr
 ## 🖊 Citation
 If you find HumanAesExpert useful for your research, welcome to 🌟 this repo and cite our work using the following BibTeX:
 
-```
+```bibtex
 @article{liao2025humanaesexpert,
   title={HumanAesExpert: Advancing a Multi-Modality Foundation Model for Human Image Aesthetic Assessment},
   author={Liao, Zhichao and Liu, Xiaokun and Qin, Wenyu and Li, Qingyu and Wang, Qiulin and Wan, Pengfei and Zhang, Di and Zeng, Long and Feng, Pingfa},
