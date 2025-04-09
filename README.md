@@ -9,7 +9,7 @@
   <!-- <a href='LICENSE'><img src='https://img.shields.io/badge/license-MIT-yellow'></a> -->
   <a href='https://arxiv.org/abs/2503.23907'><img src='https://img.shields.io/badge/arXiv-HumanAesExpert-red'></a>  &nbsp;
   <a href='https://humanaesexpert.github.io/HumanAesExpert/'><img src='https://img.shields.io/badge/Project-HumanAesExpert-green'></a> &nbsp;
-  <a href="https://github.com/HumanAesExpert/HumanAesExpert"><img src="https://img.shields.io/badge/GitHub-HumanAesExpert-9E95B7?logo=github"></a> &nbsp; 
+  <a href="https://github.com/KwaiVGI/HumanAesExpert"><img src="https://img.shields.io/badge/GitHub-HumanAesExpert-9E95B7?logo=github"></a> &nbsp; 
   <br>
   <a href='https://huggingface.co/HumanBeauty/HumanAesExpert-1B'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Model-HumanAesExpert_1b-blue'></a> &nbsp; 
   <a href='https://huggingface.co/HumanBeauty/HumanAesExpert-8b'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Model-HumanAesExpert_8b-blue'></a> &nbsp; 
