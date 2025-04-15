@@ -31,7 +31,7 @@
 
 ## 🎨 News
   - **`2025/04/15`**: We warmly welcome you to try HumanAesExpert! 🥕🥕🥕
-  - **`2025/04/15`**: We release the HumanAesExpert-1B and HumanAesExpert-8B pre-trained models on Hugging Face! 🔥🔥🔥 
+  - **`2025/04/15`**: We release the [**HumanAesExpert-1B**](https://huggingface.co/KwaiVGI/HumanAesExpert-1B) and [**HumanAesExpert-8B**](https://huggingface.co/KwaiVGI/HumanAesExpert-8B) pre-trained models on Hugging Face! 🔥🔥🔥 
   - **`2025/04/15`**: We release the [**training and inference code on Github**](https://github.com/KwaiVGI/HumanAesExpert)! 🔥🔥🔥 
   - **`2025/04/01`**: Our [**HumanAesExpert paper**](https://arxiv.org/abs/2503.23907) is available.
 
