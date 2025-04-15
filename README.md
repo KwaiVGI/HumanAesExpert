@@ -75,7 +75,7 @@ The Visualization Results of Our Model, where ‘’( )'' indicate the Ground Tr
 
 
 
-## Quicker Start with Hugging Face AutoModel
+## 🔜 Quicker Start with Hugging Face AutoModel
 
 No need to install this GitHub repo. 
 > Please use transformers==4.44.2 to ensure the model works normally.
@@ -190,7 +190,7 @@ expert_score, expert_text = model.expert_score(tokenizer,pixel_values)
 expert_annotataion = model.expert_annotataion(tokenizer, pixel_values, generation_config)
 ```
 
-## Installation
+## 🔧 Installation
 
 If you need to fine-tune or train your model from scratch, you need to install additional dependencies further. Our training code is based on modified [ms-swift](https://github.com/modelscope/ms-swift), and you should install it from this repository instead of the official code.
 
@@ -206,7 +206,7 @@ pip install -e .
 ```
 
 
-### Prepare Data
+### 📊 Prepare Data
 Get dataset ready, you can arrange your dirs as follows:
 
 ```
@@ -229,21 +229,21 @@ We need to produce jsonl file for fine-tuning. The following command will genera
 python prepare_data_for_swift.py
 ```
 
-### Fine-tune HumanAesExpert
+### 🔥 Fine-tune HumanAesExpert
 ```shell
 cd finetune-workspace
 source ./finetune-HumanAesExpert-1b.sh
 ```
 
-### Fine-tune InternVL2 from scratch
+### 🔥 Fine-tune InternVL2 from scratch
 The simplest approach is to download the original weights corresponding to the model size of InternVL2 and replace our weight files. Then, change the model path to the local path.
 
-## Acknowledgements
+## 💗 Acknowledgements
 
 We are immensely grateful to the [ms-swift](https://github.com/modelscope/ms-swift) and [InternVL](https://github.com/OpenGVLab/InternVL) projects for the inception of this repository.
 
 
-## License
+## ⚖️ License
 
 This project is released under the [MIT license](LICENSE). Parts of this project contain code and models from other sources, which are subject to their respective licenses.
 
