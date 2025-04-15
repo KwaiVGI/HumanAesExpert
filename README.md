@@ -30,14 +30,16 @@
 
 
 ## 🎨 News
+  - **`2025/04/15`**: We release the HumanAesExpert-1B and HumanAesExpert-8B pre-trained models on Hugging Face. We warmly welcome you to try HumanAesExpert! 🥕🥕🥕
+  - **`2025/04/15`**: We release the training and inference code on Github! 🔥🔥🔥
   - **`2025/04/01`**: Our [**HumanAesExpert paper**](https://arxiv.org/abs/2503.23907) is available.
 
 
 ## 🌏 Open Source
 Thank you all for your attention! We are actively cleaning our datasets, models, and codes, and we will open source them soon.
 - [x] Technical Paper
-- [ ] Training and inference code
-- [ ] Pre-trained Models (HumanAesExpert-1B, HumanAesExpert-8B)
+- [x] Training and inference code on GitHub
+- [x] Pre-trained models (HumanAesExpert-1B, HumanAesExpert-8B) on Hugging Face
 - [ ] HumanBeauty Dataset
 
 
