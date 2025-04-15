@@ -206,7 +206,7 @@ pip install -e .
 ```
 
 
-### 📊 Prepare Data
+## 📈 Prepare Data
 Get dataset ready, you can arrange your dirs as follows:
 
 ```
@@ -229,24 +229,27 @@ We need to produce jsonl file for fine-tuning. The following command will genera
 python prepare_data_for_swift.py
 ```
 
-### 🔥 Fine-tune HumanAesExpert
+## 🔥 Fine-tune HumanAesExpert
 ```shell
 cd finetune-workspace
 source ./finetune-HumanAesExpert-1b.sh
 ```
 
-### 🔥 Fine-tune InternVL2 from scratch
+## 🔥 Fine-tune InternVL2 from scratch
 The simplest approach is to download the original weights corresponding to the model size of InternVL2 and replace our weight files. Then, change the model path to the local path.
+
+
 
 ## 💗 Acknowledgements
 
 We are immensely grateful to the [ms-swift](https://github.com/modelscope/ms-swift) and [InternVL](https://github.com/OpenGVLab/InternVL) projects for the inception of this repository.
 
 
+
+
 ## ⚖️ License
 
 This project is released under the [MIT license](LICENSE). Parts of this project contain code and models from other sources, which are subject to their respective licenses.
-
 
 
     
