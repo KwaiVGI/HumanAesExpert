@@ -73,6 +73,181 @@ class="center">
 The Visualization Results of Our Model, where ‘’( )'' indicate the Ground Truth scores. From A to L, they respectively represent facial brightness, facial feature clarity, facial skin tone, facial structure, facial contour clarity, facial aesthetic, outfit, body shape, looks, general appearance aesthetic, environment and overall aesthetic scores.
 
 
+
+## Quicker Start with Hugging Face AutoModel
+
+No need to install this GitHub repo. 
+> Please use transformers==4.44.2 to ensure the model works normally.
+
+
+```python
+import numpy as np
+import torch
+import torchvision.transforms as T
+from PIL import Image
+from torchvision.transforms.functional import InterpolationMode
+from transformers import AutoModel, AutoTokenizer
+
+IMAGENET_MEAN = (0.485, 0.456, 0.406)
+IMAGENET_STD = (0.229, 0.224, 0.225)
+
+def build_transform(input_size):
+    MEAN, STD = IMAGENET_MEAN, IMAGENET_STD
+    transform = T.Compose([
+        T.Lambda(lambda img: img.convert('RGB') if img.mode != 'RGB' else img),
+        T.Resize((input_size, input_size), interpolation=InterpolationMode.BICUBIC),
+        T.ToTensor(),
+        T.Normalize(mean=MEAN, std=STD)
+    ])
+    return transform
+
+def find_closest_aspect_ratio(aspect_ratio, target_ratios, width, height, image_size):
+    best_ratio_diff = float('inf')
+    best_ratio = (1, 1)
+    area = width * height
+    for ratio in target_ratios:
+        target_aspect_ratio = ratio[0] / ratio[1]
+        ratio_diff = abs(aspect_ratio - target_aspect_ratio)
+        if ratio_diff < best_ratio_diff:
+            best_ratio_diff = ratio_diff
+            best_ratio = ratio
+        elif ratio_diff == best_ratio_diff:
+            if area > 0.5 * image_size * image_size * ratio[0] * ratio[1]:
+                best_ratio = ratio
+    return best_ratio
+
+def dynamic_preprocess(image, min_num=1, max_num=12, image_size=448, use_thumbnail=False):
+    orig_width, orig_height = image.size
+    aspect_ratio = orig_width / orig_height
+
+    # calculate the existing image aspect ratio
+    target_ratios = set(
+        (i, j) for n in range(min_num, max_num + 1) for i in range(1, n + 1) for j in range(1, n + 1) if
+        i * j <= max_num and i * j >= min_num)
+    target_ratios = sorted(target_ratios, key=lambda x: x[0] * x[1])
+
+    # find the closest aspect ratio to the target
+    target_aspect_ratio = find_closest_aspect_ratio(
+        aspect_ratio, target_ratios, orig_width, orig_height, image_size)
+
+    # calculate the target width and height
+    target_width = image_size * target_aspect_ratio[0]
+    target_height = image_size * target_aspect_ratio[1]
+    blocks = target_aspect_ratio[0] * target_aspect_ratio[1]
+
+    # resize the image
+    resized_img = image.resize((target_width, target_height))
+    processed_images = []
+    for i in range(blocks):
+        box = (
+            (i % (target_width // image_size)) * image_size,
+            (i // (target_width // image_size)) * image_size,
+            ((i % (target_width // image_size)) + 1) * image_size,
+            ((i // (target_width // image_size)) + 1) * image_size
+        )
+        # split the image
+        split_img = resized_img.crop(box)
+        processed_images.append(split_img)
+    assert len(processed_images) == blocks
+    if use_thumbnail and len(processed_images) != 1:
+        thumbnail_img = image.resize((image_size, image_size))
+        processed_images.append(thumbnail_img)
+    return processed_images
+
+def load_image(image_file, input_size=448, max_num=12):
+    image = Image.open(image_file).convert('RGB')
+    transform = build_transform(input_size=input_size)
+    images = dynamic_preprocess(image, image_size=input_size, use_thumbnail=True, max_num=max_num)
+    pixel_values = [transform(image) for image in images]
+    pixel_values = torch.stack(pixel_values)
+    return pixel_values
+
+path = 'HumanBeauty/HumanAesExpert-1B'
+model = AutoModel.from_pretrained(
+    path,
+    torch_dtype=torch.float16,
+    low_cpu_mem_usage=True,
+    use_flash_attn=True,
+    trust_remote_code=True).eval().cuda()
+tokenizer = AutoTokenizer.from_pretrained(path, trust_remote_code=True, use_fast=False)
+
+pixel_values = load_image('./examples/your_image.jpg', max_num=12).to(torch.float16).cuda()
+generation_config = dict(max_new_tokens=1024, do_sample=True)
+
+question = '<image>\nRate the aesthetics of this human picture.'
+
+# fast inference, need 1x time
+pred_score = model.score(tokenizer, pixel_values, question)
+
+# slow inference, need 2x time
+metavoter_score = model.run_metavoter(tokenizer, pixel_values)
+
+# get expert scores from the Expert head, include 12 dimensions
+expert_score, expert_text = model.expert_score(tokenizer,pixel_values)
+
+# get expert annotations from the LM head, include 12 dimensions
+expert_annotataion = model.expert_annotataion(tokenizer, pixel_values, generation_config)
+```
+
+## Installation
+
+If you need to fine-tune or train your model from scratch, you need to install additional dependencies further. Our training code is based on modified [ms-swift](https://github.com/modelscope/ms-swift), and you should install it from this repository instead of the official code.
+
+```shell
+git clone https://github.com/HumanAesExpert/HumanAesExpert
+cd HumanAesExpert
+conda create -n HumanAesExpert python=3.10.14 -y
+conda activate HumanAesExpert
+pip install torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 --index-url https://download.pytorch.org/whl/cu118
+pip install -r requirements.txt
+cd swift
+pip install -e .
+```
+
+
+### Prepare Data
+Get dataset ready, you can arrange your dirs as follows:
+
+```
+your_root
+    ---HumanBeauty
+        ---HumanBeauty-58K
+            ---images
+            ---label.jsonl
+        ---HumanBeauty-50K
+            ---images
+            ---label.jsonl
+        ---train_label.jsonl
+        ---test_label.jsonl
+    ---HumanAesExpert (this repository)
+```
+
+or update 'HumanBeauty_root' in [dataset_config.py](dataset_config.py)
+We need to produce jsonl file for fine-tuning. The following command will generate a jsonl file in [finetune-workspace](finetune-workspace).
+```shell
+python prepare_data_for_swift.py
+```
+
+### Fine-tune HumanAesExpert
+```shell
+cd finetune-workspace
+source ./finetune-HumanAesExpert-1b.sh
+```
+
+### Fine-tune InternVL2 from scratch
+The simplest approach is to download the original weights corresponding to the model size of InternVL2 and replace our weight files. Then, change the model path to the local path.
+
+## Acknowledgements
+
+We are immensely grateful to the [ms-swift](https://github.com/modelscope/ms-swift) and [InternVL](https://github.com/OpenGVLab/InternVL) projects for the inception of this repository.
+
+
+## License
+
+This project is released under the [MIT license](LICENSE). Parts of this project contain code and models from other sources, which are subject to their respective licenses.
+
+
+
     
 ## 🖊 Citation
 If you find HumanAesExpert useful for your research, welcome to 🌟 this repo and cite our work using the following BibTeX:
